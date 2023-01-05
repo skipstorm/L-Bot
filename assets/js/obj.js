@@ -1,5 +1,5 @@
 class Obj{
-    constructor(el, type){
+    constructor(el, properties){
         this.el = el;
         this.pos = $(this.el).data('pos').split(',');
         this.dir = $(this.el).data('dir');
@@ -14,35 +14,43 @@ class Obj{
             $(this.el).css({'background-image': 'url("'+$('img', this.el).attr('src')+'")'});
         }
 
-        this.init(type);
+        this.init(properties);
     }
 
-    init(type){
+    init(properties){
         var inst = this;
-        switch(type) {
-            case "player":
-                $(document).keydown(function(e) {
-                    switch(e.keyCode) {
-                        case 37: // left
-                            inst.move(0, -1);
-                        break;
-                        case 38: // up
-                            inst.move(-1, 0);
-                        break;
-                        case 39: // right
-                            inst.move(0, 1);
-                        break;
-                        case 40: // down
-                            inst.move(1, 0);
-                        break;
-                    }
-                });
-            break;
-            default: 
-                $(document).on('move-to-'+inst.pos[0]+'-'+inst.pos[1], function(){
-                    $(inst.el).hide();
-                });
-            break;
+        for(var p of properties) {
+            switch(p) {
+                case "movable":
+                    $(document).keydown(function(e) {
+                        switch(e.keyCode) {
+                            case 37: // left
+                                inst.move(0, -1);
+                            break;
+                            case 38: // up
+                                inst.move(-1, 0);
+                            break;
+                            case 39: // right
+                                inst.move(0, 1);
+                            break;
+                            case 40: // down
+                                inst.move(1, 0);
+                            break;
+                        }
+                    });
+                break;
+                case "pickable": 
+                    $(document).on('move-to-'+inst.pos[0]+'-'+inst.pos[1], function(){
+                        $(inst.el).hide();
+                    });
+                    $(document).trigger('object_picked', inst.el);
+                break;
+                case "wall": 
+                    $(document).on('moving-to-'+inst.pos[0]+'-'+inst.pos[1], function(e, pars){
+                        pars.canGo = false;
+                    });
+                break;
+            }
         }
     }
 
@@ -57,6 +65,11 @@ class Obj{
             left = 9;
         } else if (left < 0){
             left = 0;
+        }
+        var pars = {canGo: true};
+        $(document).trigger('moving-to-'+left+'-'+top, pars);
+        if(!pars.canGo) {
+            return false;
         }
         $(this.el).css({
             top: (top * 10) + '%',
