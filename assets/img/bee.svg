@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg14789"
+   viewBox="0 0 95 95"
+   version="1.1"
+   sodipodi:docname="bee.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview27"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="4.3368421"
+     inkscape:cx="8.9927185"
+     inkscape:cy="57.069175"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14789" />
+  <title
+     id="title3076">Liitle Bee</title>
+  <defs
+     id="defs14793">
+    <linearGradient
+       id="linearGradient3068"
+       x1="45.1"
+       gradientUnits="userSpaceOnUse"
+       x2="84.952"
+       y1="61.154"
+       y2="61.154">
+      <stop
+         id="stop15924-76"
+         stop-color="#fff"
+         offset="0" />
+      <stop
+         id="stop15926-1"
+         stop-color="#a2ffff"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3172"
+       x1="45.1"
+       gradientUnits="userSpaceOnUse"
+       y1="61.154"
+       gradientTransform="matrix(-1 0 0 1 94.032 -1.3066)"
+       x2="84.952"
+       y2="61.154">
+      <stop
+         id="stop15924-2"
+         stop-color="#fff"
+         offset="0" />
+      <stop
+         id="stop15926-2"
+         stop-color="#a2ffff"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3172"
+       id="linearGradient841"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1,0,0,1,94.032,-1.3066)"
+       x1="45.1"
+       y1="61.154"
+       x2="84.952"
+       y2="61.154" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3172"
+       id="linearGradient843"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1,0,0,1,94.032,-1.3066)"
+       x1="45.1"
+       y1="61.154"
+       x2="84.952"
+       y2="61.154" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3068"
+       id="linearGradient845"
+       gradientUnits="userSpaceOnUse"
+       x1="45.1"
+       y1="61.154"
+       x2="84.952"
+       y2="61.154" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3068"
+       id="linearGradient847"
+       gradientUnits="userSpaceOnUse"
+       x1="45.1"
+       y1="61.154"
+       x2="84.952"
+       y2="61.154" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3068"
+       id="linearGradient849"
+       gradientUnits="userSpaceOnUse"
+       x1="45.1"
+       y1="61.154"
+       x2="84.952"
+       y2="61.154" />
+  </defs>
+  <g
+     id="layer1"
+     transform="rotate(41.060298,61.606611,38.755783)">
+    <g
+       id="g3950">
+      <path
+         id="path15590"
+         stroke-width="1.8"
+         stroke="#000000"
+         transform="matrix(-1.2212,0,0,1.2212,119.97,-17.864)"
+         d="m 75.2,43.2 a 10.4,10.4 0 1 1 -20.8,0 10.4,10.4 0 1 1 20.8,0 z" />
+      <path
+         id="path15590-7"
+         stroke="#000000"
+         stroke-width="1.8"
+         fill="#ffff00"
+         d="M 39.599,58.252 C 42.25,71.155 54.453,82.831 66.854,84.33 79.255,85.83 87.159,76.586 84.508,63.682 81.856,50.779 69.654,39.104 57.252,37.604 44.851,36.105 36.948,45.349 39.599,58.252 Z" />
+      <path
+         id="path14800"
+         stroke="#000000"
+         stroke-width="1.8"
+         fill="url(#linearGradient3172)"
+         d="M 48.032,44.493 C 29.432,46.093 1.9548349,49.90333 9.9206828,66.084572 17.798876,82.087757 43.232,62.093 48.032,44.493 Z"
+         style="fill:url(#linearGradient841)"
+         sodipodi:nodetypes="csc" />
+      <path
+         id="path15630"
+         style="color:#000000;text-indent:0;text-transform:none"
+         d="m 70.188,42.818 c 2.1876,1.5259 4.2297,3.3109 6.0625,5.3125 -1.6387,0.12654 -3.55,0.29768 -5.7188,0.59375 -5.408,0.73828 -11.766,2.2611 -14.781,4.3125 v 0 c -2.9597,2.0849 -6.9906,7.75635 -9.8438,12.78175 -0.64133,1.1295 -1.2095,2.1918 -1.75,3.2188 -1.4291,-2.1934 -2.6088,-4.5238 -3.4688,-6.9375 2.0446,-6.0895 4.5469,-12.949 9.0312,-16 4.5252,-3.0791 12.419,-3.3262 19.062,-3.2812 0.8146,0.0055 0.65187,-0.0039 1.4062,0 z m 10.281,10.906 c 1.1219,1.8295 2.0776,3.7435 2.8125,5.7188 -1.1796,0.11523 -3.537219,-0.474201 -4.875019,-0.291561 -5.6618,0.77294 -7.872651,0.778559 -14.375181,5.229061 v 0 c -5.098031,3.924476 -5.667918,8.96385 -8.654718,14.22435 -0.17312,0.3049 0.141274,1.259182 -0.02558,1.559252 -1.8169,-1.3304 -4.136436,-3.530054 -5.699636,-5.195454 2.1553,-6.434 2.472945,-11.883967 10.367291,-18.006887 C 66.657558,52.234575 73.409038,51.626832 80.469,53.724 c 1.6259,0.01099 -6.26755,-1.40422 5e-4,-1.5e-4 z m 4.2812,11.344 c 0.25363,1.6902 0.32088,3.3108 0.21875,4.8438 -4.3964,0.61259 -9.4961,1.8388 -11.938,3.5 v 0 c -2.425,1.7082 -5.72485,6.35165 -8.06255,10.46875 -0.02442,0.043 0.02426,-0.04289 0,0 -1.6152,-0.33228 -3.273,-0.69964 -4.8437,-1.3438 0.16236,-0.46518 0.30468,-0.8847 0.46875,-1.375 1.6925,-5.0575 4.687958,-10.141141 8.431158,-12.688141 3.7077,-2.5228 9.250842,-3.442159 14.693842,-3.405359 0.59678,0.004 0.47333,-0.0031 1.0312,0 z"
+         sodipodi:nodetypes="cccccccccccccccccsccccccccccsccccccc" />
+      <path
+         id="path14800-1"
+         style="color:#000000;fill:url(#linearGradient843)"
+         d="M 48.729,45.412 C 36.883,54.598 19.991353,72.829033 33.402353,78.295033 46.813353,83.761033 53.163,59.374 48.729,45.412 Z"
+         stroke="#000000"
+         stroke-width="1.8"
+         fill="url(#linearGradient3172)"
+         sodipodi:nodetypes="csc" />
+      <path
+         id="path15841"
+         stroke="#000000"
+         stroke-width="1px"
+         d="m 29.332,30.093 c -9.875,-0.2 -11.102,-1.0525 -13.15,1.675 -2.0477,2.7275 -3.1495,7.2871 -0.6,7.3 2.5495,0.01295 2.405,-4.5076 3.1434,-6.3622 0.73841,-1.8546 5.5066,-2.3003 10.607,-2.6128 z" />
+      <path
+         id="path15841-2"
+         stroke="#000000"
+         stroke-width="1px"
+         d="m 39.894,23.452 c -3.35e-4,-9.877 -0.82783,-11.121 1.9405,-13.113 2.7683,-1.9921 7.3492,-3.0016 7.3106,-0.45231 -0.03859,2.5493 -4.5553,2.3134 -6.4244,3.0142 -1.8691,0.70077 -2.4112,5.459 -2.8267,10.552 z" />
+      <g
+         id="g15882"
+         style="color:#000000;fill:url(#linearGradient849)"
+         transform="rotate(-90,46.148,27.801)"
+         stroke="#000000"
+         stroke-width="1.8"
+         fill="url(#linearGradient3068)">
+        <path
+           id="path14800-4"
+           style="color:#000000;fill:url(#linearGradient845)"
+           d="m 29.702,30.083 c 18.6,1.6 46.132,11.217 35.8,26 -10.332,14.783 -31,-8.4 -35.8,-26 z" />
+        <path
+           id="path14800-1-5"
+           style="color:#000000;fill:url(#linearGradient847)"
+           d="M 29.005,31.002 C 40.851,40.188 55.227,58.673 41.816,64.139 28.405,69.605 24.571,44.963 29.005,31.002 Z" />
+      </g>
+      <path
+         id="path15886"
+         stroke-width="0"
+         d="m 81.563233,79.445584 4.971758,8.699918 -7.995126,-6.157237 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+  </g>
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Bee</dc:title>
+        <dc:date>2013-09-20T13:44:12</dc:date>
+        <dc:description>A bee - it's a slightly altered version of 'Bee' by forestgreen (http://openclipart.org/detail/118099/bee-by-forestgreen) - I just got rid of the white gradients to get a flatter, less 3D look.</dc:description>
+        <dc:source>https://openclipart.org/detail/183607/bee-by-anarres-183607</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>anarres</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>bee</rdf:li>
+            <rdf:li>bumblebee</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -19,7 +19,7 @@ body {
 
 .land .hero {
     width: 10%; height: 10%;
-    background: url("../img/bee.png") no-repeat center center;
+    background: url("../img/bee.svg") no-repeat center center;
     background-size: contain;
     transition-duration: 100ms;
 }
