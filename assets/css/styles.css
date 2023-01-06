@@ -4,10 +4,21 @@ body {
     font-family: Arial;
 }
 
+.game_wrap {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 30px;
+    gap: 30px;
+}
+.game_wrap .game {
+    position: relative;
+    flex: 2;
+    opacity: 0.01;
+}
 
 .land {
-    width: calc(100vh - 200px);
-    height: calc(100vh - 200px);
+    width: 100%;
+    aspect-ratio: 1 / 1;
     margin: 100px auto;
     background: rgba(233,71,212,.61) url("../img/quadrato.svg") repeat top left;
     background-size: 10%;
@@ -19,7 +30,7 @@ body {
 
 .land .hero {
     width: 10%; height: 10%;
-    background: url("../img/bee.svg") no-repeat center center;
+    background: url("../img/player/bee.svg") no-repeat center center;
     background-size: contain;
     transition-duration: 100ms;
 }

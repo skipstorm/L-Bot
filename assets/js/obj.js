@@ -1,5 +1,6 @@
 class Obj{
-    constructor(el, properties){
+    constructor(el, app, properties){
+        this.app = app;
         this.el = el;
         this.pos = $(this.el).data('pos').split(',');
         this.dir = $(this.el).data('dir');
@@ -40,13 +41,13 @@ class Obj{
                     });
                 break;
                 case "pickable": 
-                    $(document).on('move-to-'+inst.pos[0]+'-'+inst.pos[1], function(){
+                    $(inst.app).on('move-to-'+inst.pos[0]+'-'+inst.pos[1], function(){
                         $(inst.el).hide();
                     });
-                    $(document).trigger('object_picked', inst.el);
+                    $(inst.app).trigger('object_picked', inst.el);
                 break;
                 case "wall": 
-                    $(document).on('moving-to-'+inst.pos[0]+'-'+inst.pos[1], function(e, pars){
+                    $(inst.app).on('moving-to-'+inst.pos[0]+'-'+inst.pos[1], function(e, pars){
                         pars.canGo = false;
                     });
                 break;
@@ -67,7 +68,7 @@ class Obj{
             left = 0;
         }
         var pars = {canGo: true};
-        $(document).trigger('moving-to-'+left+'-'+top, pars);
+        $(this.app).trigger('moving-to-'+left+'-'+top, pars);
         if(!pars.canGo) {
             return false;
         }
@@ -75,7 +76,7 @@ class Obj{
             top: (top * 10) + '%',
             left: (left * 10) + '%',
         });
-        $(document).trigger('move-to-'+left+'-'+top);
+        $(this.app).trigger('move-to-'+left+'-'+top);
         $(this.el).attr('data-pos', left+','+top);
     }
 
@@ -89,7 +90,7 @@ class Obj{
             this.setPosition(pos[1] + top, pos[0] + left);
         }
         this.moveCount++;
-        $(document).trigger('move_'+this.id);
+        $(this.app).trigger('move_'+this.id);
     };
 
 
