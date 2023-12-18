@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+    <head>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="game_wrap">
+            <div class="game" data-game='{"controls": "37,38,39,40"}' data-type="logic">
+                <div class="fireworks"></div>
+                <div class="land-wrap">
+                    <div class="land">
+                    </div>
+                    <div class="control_pad">
+                        <ul>
+                            <li><span class="button" data-movekey="38">&uarr;</span></li>
+                            <li><span class="button" data-movekey="37">&larr;</span></li>
+                            <li><span class="button" data-movekey="40">&darr;</span></li>
+                            <li><span class="button" data-movekey="39">&rarr;</span></li>
+                        </ul>
+                        <div class="planned_moves">
+
+                        </div>
+                        <div class="submit">
+                            <button class="button auto">Via!</button>
+                        </div>
+                    </div>
+                    <div class="extra-toggle"></div>
+                    <div class="extra">
+                        <div class="game_message game_controls">
+                            <h3>Come si gioca</h3>
+                            <p>Usa i bottoni sullo schermo o la tastiera del computer per creare il percorso da fare.</p>
+                            <p>Una volta finito premi il pulsante "Via!" per iniziare la raccolta.</p>
+                            <br>
+                            <p><strong>Controlli</strong></p>
+                            <ul>
+                                <li><span class="button" data-movekey="38">&uarr;</span>: alto</li>
+                                <li><span class="button" data-movekey="37">&larr;</span>: sinistra</li>
+                                <li><span class="button" data-movekey="40">&darr;</span>: basso</li>
+                                <li><span class="button" data-movekey="39">&rarr;</span>: destra</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+        </div>
+
+        <script type="text/javascript" src="assets/vendors/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/vendors/fireworks.js"></script>
+        <script type="text/javascript" src="assets/js/utils.js"></script>
+        <script type="text/javascript" src="assets/js/obj.js"></script>
+        <script type="text/javascript" src="assets/js/levels.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+    </body>
+</html>

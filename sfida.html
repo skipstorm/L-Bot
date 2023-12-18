@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+    <head>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="game_wrap">
+            <div class="game hidden" data-game='{"controls": "65,87,68,83"}'>
+                <div class="fireworks"></div>                
+                <div class="land-wrap">
+                    <div class="land" data-level="1">
+                    </div>
+                    
+                    <div class="control_pad">
+                        <ul>
+                            <li><span class="button" data-movekey="87">W</span></li>
+                            <li><span class="button" data-movekey="65">A</span></li>
+                            <li><span class="button" data-movekey="83">S</span></li>
+                            <li><span class="button" data-movekey="68">D</span></li>
+                        </ul>
+                    </div>
+                    <div class="extra-toggle"></div>
+                    <div class="extra">
+                        <div class="game_message game_controls">
+                            <h3>Come si gioca</h3>
+                            <p>Muovi con i bottoni sullo schermo o con la tastiera del computer, raccogli tutti gli oggetti prima dell'avversario.</p>
+                            <br>
+                            <p><strong>Controlli</strong></p>
+                            <ul>
+                                <li><span class="button" data-movekey="87">W</span>: alto</li>
+                                <li><span class="button" data-movekey="65">A</span>: sinistra</li>
+                                <li><span class="button" data-movekey="83">S</span>: basso</li>
+                                <li><span class="button" data-movekey="68">D</span>: destra</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="game" data-game='{"controls": "37,38,39,40"}'>
+                <div class="fireworks"></div>
+                <div class="land-wrap">
+                    <div class="land" data-level="1">
+                    </div>
+
+                    <div class="control_pad">
+                        <ul>
+                            <li><span class="button" data-movekey="38">&uarr;</span></li>
+                            <li><span class="button" data-movekey="37">&larr;</span></li>
+                            <li><span class="button" data-movekey="40">&darr;</span></li>
+                            <li><span class="button" data-movekey="39">&rarr;</span></li>
+                        </ul>
+                    </div>
+                    <div class="extra-toggle"></div>
+                    <div class="extra">
+                        <div class="game_message game_controls">
+                            <p><strong>Controlli</strong></p>
+                            <ul>
+                                <li><span class="button" data-movekey="38">&uarr;</span>: alto</li>
+                                <li><span class="button" data-movekey="37">&larr;</span>: sinistra</li>
+                                <li><span class="button" data-movekey="40">&darr;</span>: basso</li>
+                                <li><span class="button" data-movekey="39">&rarr;</span>: destra</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+        </div>
+
+        <script type="text/javascript" src="assets/vendors/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/vendors/fireworks.js"></script>
+        <script type="text/javascript" src="assets/js/utils.js"></script>
+        <script type="text/javascript" src="assets/js/obj.js"></script>
+        <script type="text/javascript" src="assets/js/levels.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+    </body>
+</html>

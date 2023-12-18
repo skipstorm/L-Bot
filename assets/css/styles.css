@@ -3,23 +3,38 @@ body {
     margin: 0; padding: 0;
     font-family: Arial;
 }
+.hidden {display: none;}
+.levels_archive {
+    display: none;
+}
 
 .game_wrap {
     display: flex;
     justify-content: space-evenly;
     margin: 0 30px;
     gap: 30px;
+    position: relative;
 }
 .game_wrap .game {
     position: relative;
     flex: 2;
-    opacity: 0.01;
+}
+.fireworks {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
 }
 
+.land-wrap {
+    width: 100%;
+    margin: 100px auto;
+    position: relative;
+}
 .land {
     width: 100%;
     aspect-ratio: 1 / 1;
-    margin: 100px auto;
     background: rgba(233,71,212,.61) url("../img/quadrato.svg") repeat top left;
     background-size: 10%;
     position: relative;
@@ -42,12 +57,77 @@ body {
     background-size: contain;
     transition-duration: 100ms;
 }
+.extra {
+    position: absolute;
+    top: 100px; left: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+.extra-toggle:before {
+    content: "i";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    background: white;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0 2px 2px black;
+    cursor: pointer;
+}
 
 .score {
     color: #ffffff;
-    position: absolute; top: 30px; left: 30px; font-size: 36px;
+    position: absolute; top: -40px; left: 0px; font-size: 36px;
 }
 
 .credits {
     position: absolute; bottom: 0; left: 0; color: #ffffff;
+}
+
+.button {
+    background: rgba(255, 183, 245, 1);
+    color: rgb(129, 1, 112);
+    border: 3px outset rgba(233,71,212,.61);
+    box-shadow: 1px 3px 3px rgba(233,71,212,.61);
+    border-radius: 20%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+}
+.button.large {width: 50px; height: 50px; line-height: 50px; font-size: 1.4em;}
+.button.auto {width: auto; padding: 0 16px;}
+.game_message {
+    max-width: 500px; margin: 50px auto;
+    border: 3px solid rgba(233,71,212,.61);
+    padding: 10px 16px; background: rgba(255, 183, 245, 0.785);
+}
+.game_message ul {list-style: none;}
+.game_message ul li {padding-bottom: 10px;}
+.game_message ul a {font-size: 1.5em; color: rgb(129, 1, 112); text-decoration: none;}
+.game_message ul a:hover {
+    text-shadow: 1px 5px 5px rgba(233,71,212,.61);
+}
+.game_controls {
+    margin-top: -80px;
+}
+.game_controls ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.control_pad {
+    width: 100%; text-align: center; margin-top: 10px;
+}
+.control_pad ul {list-style: none; margin: 0; padding: 0;}
+.control_pad ul li {display: inline-block; cursor: pointer;}
+
+.planned_moves {
+    background: rgba(255,255,255,.6);
+    border-radius: 10px;
+    min-height: 40px; padding: 10px;
+    margin: 10px auto;
 }

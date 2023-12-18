@@ -5,53 +5,35 @@
     </head>
     <body>
         <div class="game_wrap">
-            <div class="game" data-game="">
-                <div class="land">
-                    <div class="object" data-properties="pickable" data-pos="5,5"><img src="assets/img/flowers/a.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="0,6"><img src="assets/img/flowers/b.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="3,7"><img src="assets/img/flowers/c.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="5,2"><img src="assets/img/flowers/d.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="8,9"><img src="assets/img/flowers/e.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="9,0"><img src="assets/img/flowers/f.svg"></div>
-                    <div class="object" data-properties="wall" data-pos="5,6"><img src="assets/img/stones/a.svg"></div>
-                    <div class="object" data-properties="wall" data-pos="2,7"><img src="assets/img/stones/b.svg"></div>
-                    
-                    <div class="hero" data-pos="5,9" data-dir="top"></div>
-                </div>
-                <div class="controls">
-
-                </div>
-                <div class="score">
-
-                </div>
-            </div>
-            <div class="game" data-game="">
-                <div class="land">
-                    <div class="object" data-properties="pickable" data-pos="5,5"><img src="assets/img/flowers/a.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="0,6"><img src="assets/img/flowers/b.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="3,7"><img src="assets/img/flowers/c.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="5,2"><img src="assets/img/flowers/d.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="8,9"><img src="assets/img/flowers/e.svg"></div>
-                    <div class="object" data-properties="pickable" data-pos="9,0"><img src="assets/img/flowers/f.svg"></div>
-                    <div class="object" data-properties="wall" data-pos="5,6"><img src="assets/img/stones/a.svg"></div>
-                    <div class="object" data-properties="wall" data-pos="2,7"><img src="assets/img/stones/b.svg"></div>
-                    
-                    <div class="hero" data-pos="5,9" data-dir="top"></div>
-                </div>
-                <div class="controls">
-
-                </div>
-                <div class="score">
-
-                </div>
+            <div class="game_message">
+                <h2>Seleziona una modalità di gioco</h2>
+                <ul>
+                    <li>
+                        Allenamento libero<br>
+                        <a href="freeplay.html?land=0">Mappa 1</a>
+                        <a href="freeplay.html?land=1">Mappa 2</a>
+                        <a href="freeplay.html?land=2">Mappa 3</a>
+                    </li>
+                    <li>
+                        Gioco di logica<br>
+                        <a href="logic.html?land=0">Mappa 1</a>
+                        <a href="logic.html?land=1">Mappa 2</a>
+                        <a href="logic.html?land=2">Mappa 3</a>
+                    </li>
+                    <li>
+                        Sfida tra due giocatori<br>
+                        <a href="sfida.html?land=0">Mappa 1</a>
+                        <a href="sfida.html?land=1">Mappa 2</a>
+                        <a href="sfida.html?land=2">Mappa 3</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="credits">
-        </div>
+
         <script type="text/javascript" src="assets/vendors/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/vendors/fireworks.js"></script>
+        <script type="text/javascript" src="assets/js/utils.js"></script>
         <script type="text/javascript" src="assets/js/obj.js"></script>
         <script type="text/javascript" src="assets/js/app.js"></script>
-
-
     </body>
 </html>
