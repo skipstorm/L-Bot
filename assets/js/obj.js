@@ -108,12 +108,6 @@ class Obj{
                 $(this.app).trigger('storedmove_'+this.id, {top: top, left: left});
                 return;
             }
-            /*
-            this.app.stop = true;
-            setTimeout(function(){
-                _this.app.stop = false;
-            }, 50);
-            */
         }
         var pos = $(this.el).attr('data-pos').split(',');
         pos[0] = parseInt(pos[0]);
@@ -121,13 +115,39 @@ class Obj{
 
         if(this.setDirection([top, left])) {
             this.setPosition(pos[1] + top, pos[0] + left);
-        }
+        } else if(this.app.fp){
+            if(top > 0) {
+                switch($(this.el).attr('data-dir')){
+                    case 'left': 
+                        this.setPosition(pos[1], pos[0] + 1); break;
+                    case 'top': 
+                        this.setPosition(pos[1] + 1, pos[0]); break;
+                    case 'right':
+                        this.setPosition(pos[1], pos[0] - 1); break;
+                    case 'down': 
+                        this.setPosition(pos[1] - 1, pos[0]); break;
+                }
+            } else if (top < 0){
+                switch($(this.el).attr('data-dir')){
+                    case 'left': 
+                        this.setPosition(pos[1], pos[0] - 1); break;
+                    case 'top': 
+                        this.setPosition(pos[1] - 1, pos[0]); break;
+                    case 'right':
+                        this.setPosition(pos[1], pos[0] + 1); break;
+                    case 'down': 
+                        this.setPosition(pos[1] + 1, pos[0]); break;
+                }
+            }
+        } 
+
         this.moveCount++;
         $(this.app).trigger('move_'+this.id, this);
     };
 
 
     setDirection(direction){
+
         if(typeof direction == 'object') {
             var top = direction[0];
             var left = direction[1];
@@ -144,26 +164,52 @@ class Obj{
             }
         }
 
-        /*
-        var currentDeg = 0;
-        console.log($(this.el).css('transform'), $(this.el).css('transform').match(/(-?\d*\.?\d?)(deg)/))
-        if($(this.el).css('transform').match(/(-?\d*\.?\d?)(deg)/)){
-            currentDeg = parseFloat($(this.el).css('transform').match(/(-?\d*\.?\d?)(deg)/)[0]);
+        
+        if(this.app.fp){
+            var deg = parseInt($(this.el).attr('data-deg')) || 0;
+            var currDir = $(this.el).attr('data-dir');
+            
+            var newDir;
+            if (direction == 'left'){
+                switch(currDir){
+                    case 'left': newDir = 'down'; break;
+                    case 'top': newDir = 'left'; break;
+                    case 'right': newDir = 'top'; break;
+                    case 'down': newDir = 'right'; break;
+                }
+                $(this.el).css({'transform': 'rotate('+(deg - 90)+'deg)'});
+                $(this.el).attr('data-deg', deg - 90);
+                $(this.el).attr('data-dir', newDir);
+            } else if (direction == 'right'){
+                switch(currDir){
+                    case 'left': newDir = 'top'; break;
+                    case 'top': newDir = 'right'; break;
+                    case 'right': newDir = 'down'; break;
+                    case 'down': newDir = 'left'; break;
+                }
+                $(this.el).css({'transform': 'rotate('+(deg + 90)+'deg)'});
+                $(this.el).attr('data-deg', deg + 90);
+                $(this.el).attr('data-dir', newDir);
+            }
+            return false;
         }
-        console.log(currentDeg)
-        */
+
         switch(direction) {
             case 'left':
                 $(this.el).css({'transform': 'rotate(-90deg)'});
+                $(this.el).attr('data-deg', -90);
             break;
             case 'right':
                 $(this.el).css({'transform': 'rotate(90deg)'});
+                $(this.el).attr('data-deg', 90);
             break;
             case 'down':
                 $(this.el).css({'transform': 'rotate(180deg)'});
+                $(this.el).attr('data-deg', 180);
             break;
             default:
                 $(this.el).css({'transform': 'rotate(0deg)'});
+                $(this.el).attr('data-deg', 0);
             break;
         }
 

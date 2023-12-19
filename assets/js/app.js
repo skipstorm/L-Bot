@@ -5,6 +5,9 @@
     api.game = {
         init: function(app, defaults) {
             app.stop = false;
+            // Il movimento è relativo all'ape e non all'utente
+            app.fp = true;
+            
             if($(app).data('type') == 'logic') {
                 app.logicPlay = true;
             } else {
@@ -108,9 +111,9 @@
     $(document).ready(function(){
         // Set land
         var land = api.utils.getLand();
-        if(land) {
-            $('.land').attr('data-level', land);
-        }
+        
+        $('.land').attr('data-level', land);
+        
         // Set game type
         var land = api.utils.getLand();
         if(land) {

@@ -20,7 +20,7 @@
         },
         getLand: function(){
             let params = (new URL(document.location)).searchParams;
-            return params.get("land");
+            return parseInt(params.get("land")) || 0;
         }
     };
 
